@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Cart from './components/Cart/Cart';
+import { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const [info,setInfo] = useState([]);
+  useEffect(()=>{
+    fetch('data.json')
+    .then(res => res.json())
+    .then(data =>  setInfo(data));
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     <Header></Header>
+     <div className='row col-md-8 cart-style row row-cols-1 row-cols-md-3 g-4'>
+       {
+         info.map(information => <Cart key={information.id} information={information}></Cart>)
+       }
+     </div>
+     <div className='row col-md-4'>
+
+     </div>
     </div>
   );
 }
