@@ -15,7 +15,7 @@
       "id": "623dd979e0fe77bb7344839d",
       "price": "$1,956.84",
       "picture": "https://www.freecodecamp.org/news/content/images/2020/05/Python-language.png",
-      "name": "Python course"
+      "name": "Learn Python course"
     },
     {
       "id": "623dd979d89692aecb214d25",
@@ -58,5 +58,17 @@
       "price": "$2,957.89",
       "picture": "https://i.pinimg.com/originals/9d/94/a5/9d94a53738b84d6c0e5ab094bcfe2af1.png",
       "name": "Swift"
+    },
+    {
+      "id": "623dd979234a136462b04",
+      "price": "$2,957.89",
+      "picture": "https://laravelnews.imgix.net/images/phplogo-1617378886.jpg?ixlib=php-3.3.1",
+      "name": "PHP"
+    },
+    {
+      "id": "623d9792b34a136462b04",
+      "price": "$2,957.89",
+      "picture": "https://logovtor.com/wp-content/uploads/2020/11/scala-programming-language-logo-vector.png",
+      "name": "Scala "
     }
   ]

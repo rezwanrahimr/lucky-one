@@ -37,13 +37,18 @@ function App() {
        }
      </div>
      <div className='col-md-4 '>
-
+       <h2 className='fw-bold text-center mt-3'>Pereview cart</h2>
        {
          infoCart.map(pro => <AddToCart key={pro.id} pro={pro}></AddToCart>)
         
        }
-        <button onClick={chooseMeHandler}>chose one</button>
-        <button onClick={deletHandelar}>clear</button>
+       <div className='d-flex justify-content-center'>
+       <button type="button" onClick={chooseMeHandler} class="btn btn-success my-2 w-75 ">choose one</button>
+       </div>
+       <div className='d-flex justify-content-center'>
+       <button type="button"  onClick={deletHandelar} class="btn btn-danger w-75">Delete</button>
+       
+       </div>
        
      </div>
      </div>

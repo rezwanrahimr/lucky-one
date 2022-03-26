@@ -1,11 +1,10 @@
 import React from 'react';
 
 const AddToCart = ({pro}) => {
-    console.log(pro)
     return (
         <div>
             
-            <h2 className='some-style'>{pro.name}</h2>
+            <h2 className='some-style text-center'>{pro.name}</h2>
             
         </div>
     );
