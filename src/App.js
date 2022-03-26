@@ -4,6 +4,9 @@ import Cart from './components/Cart/Cart';
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddToCart from './components/AddToCart/AddToCart';
+import Aleart from './components/Aleart/Aleart';
+import { Alert } from 'react-bootstrap';
+
 
 function App() {
   const [info,setInfo] = useState([]);
@@ -16,6 +19,9 @@ function App() {
   const handleAddToCart =(information)=>{
     const newCart = [...infoCart,information];
     setInfoCart(newCart);
+  }
+  if(infoCart.length > 4){
+  return (<Alert>hi am am</Alert>)
   }
   console.log(infoCart)
  
@@ -37,7 +43,7 @@ function App() {
        }
      </div>
      <div className='col-md-4 '>
-       <h2 className='fw-bold text-center mt-3'>Pereview cart</h2>
+       <h2 className='fw-bold text-center mt-3 mb-2'>Pereview cart</h2>
        {
          infoCart.map(pro => <AddToCart key={pro.id} pro={pro}></AddToCart>)
         

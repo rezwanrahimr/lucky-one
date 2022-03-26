@@ -4,7 +4,7 @@ const AddToCart = ({pro}) => {
     return (
         <div>
             
-            <h2 className='some-style text-center'>{pro.name}</h2>
+            <h3 className='some-style text-center'>{pro.name}</h3>
             
         </div>
     );
