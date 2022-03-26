@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './components/Header/Header';
 import Cart from './components/Cart/Cart';
 import { useEffect, useState } from 'react';
@@ -20,7 +19,7 @@ function App() {
     const newCart = [...infoCart,information];
     setInfoCart(newCart);
   }
-     const chooseOneHandler=()=>{
+    const chooseOneHandler=()=>{
     const newelement = infoCart[Math.floor(Math.random() * infoCart.length)];
     setInfoCart([newelement]);
   }
