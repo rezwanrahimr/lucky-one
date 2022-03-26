@@ -4,7 +4,6 @@ import Cart from './components/Cart/Cart';
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddToCart from './components/AddToCart/AddToCart';
-import Aleart from './components/Aleart/Aleart';
 import { Alert } from 'react-bootstrap';
 
 
@@ -21,7 +20,7 @@ function App() {
     setInfoCart(newCart);
   }
   if(infoCart.length > 4){
-  return (<Alert>hi am am</Alert>)
+  return (<Alert>please added only 4 items!</Alert>)
   }
   console.log(infoCart)
  
@@ -58,6 +57,19 @@ function App() {
        
      </div>
      </div>
+      <div className='container mt-5 ms-3'>
+        <h2 >Question:</h2>
+        <div className='row'>
+          <div className='col-md-6'>
+          <h3>How react work?</h3>
+          <p>React is one of the best JavaScript libraries used to create user interfaces.that creates user interfaces in a predictable and efficient way using declarative code.The syntax used by React components is called JSX.React has something called the virtual Document Object Model (DOM), which is used to keep a representation of the real DOM elements in memory. </p>
+          </div>
+          <div className='col-md-6'>
+          <h3>How use state work?</h3>
+          <p>useState() is a built-in function that comes with the React library.useState() should only be used inside a functional component.useState() returns a tuple. The first parameter in the array is the current state value. The second parameter is the function that will allow you to update the state value. </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
